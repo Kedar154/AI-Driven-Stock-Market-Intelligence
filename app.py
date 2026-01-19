@@ -460,7 +460,7 @@ def plot_daily_errors_with_details(output_df, rolling_preds, errors, rmse, mae, 
 
     # 4. FIX: Add annotation to 'fig_error', not 'fig'
     fig_error.add_annotation(
-        text=f"<b>PREDICTIVE CORE METRICS</b><br>RMSE: ${rmse:.2f}<br>MAE: ${mae:.2f}<br>MAPE: {mape:.2f}%",
+        text=f"<b>Predictive Core Metrics</b><br>RMSE: ${rmse:.2f}<br>MAE: ${mae:.2f}<br>MAPE: {mape:.2%}",
         xref="paper", yref="paper",
         x=0.02, y=0.95, # Positioned top-left
         showarrow=False,
