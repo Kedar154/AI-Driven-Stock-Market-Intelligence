@@ -1,4 +1,8 @@
+streamlit
+pandas
+numpy
+matplotlib
+plotly
 statsmodels
-
 arch
-
+scikit-learn
