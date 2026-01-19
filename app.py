@@ -495,3 +495,19 @@ errors = output_df['prices'] - rolling_preds
 
 # Display the plot
 st.plotly_chart(plot_daily_errors_with_details(output_df, rolling_preds, errors, rmse, mae, mape), use_container_width=True)
+
+
+##############################################
+# 1. Calculate MAPE (as a decimal first)
+mape_decimal = mean_absolute_percentage_error(output_df['prices'], rolling_preds)
+
+# 2. Calculate "Accuracy Score"
+# If MAPE is 0.05 (5%), Accuracy is 95%
+accuracy_score = (1 - mape_decimal) * 100
+
+# 3. Display it in Streamlit
+st.columns(3)[0].metric(
+    label="Overall Model Accuracy", 
+    value=f"{accuracy_score:.2f}%",
+    help="Calculated as 100% - Mean Absolute Percentage Error (MAPE)"
+)
