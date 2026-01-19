@@ -2,7 +2,6 @@
 # pip install opendatasets
 #pip install statsmodels
 # pip install arch
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -22,7 +21,7 @@ import streamlit as st
 # LOADING THE DATA
 
 
-data = pd.read_csv('microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
+data = pd.read_csv('D:/kEdAr/academix/CLubs/AIML/projects/Stock PRediction/microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
 stock = pd.DataFrame()
 #using close and date
 stock['prices'] = data['Close']
@@ -433,3 +432,65 @@ st.subheader('PREDICTION OF MODEL')
 st.plotly_chart(fig, use_container_width=True)
 
 
+#####################################
+#####################################
+
+def plot_daily_errors_with_details(output_df, rolling_preds, errors, rmse, mae, mape):
+    # 1. Create the figure - note the name 'fig_error'
+    fig_error = go.Figure()
+
+    # 2. Add Bar chart
+    fig_error.add_trace(go.Bar(
+        x=output_df.index,
+        y=errors,
+        marker_color=np.where(np.array(errors) >= 0, CYAN_NEON, '#FF3131'), 
+        name='Daily Error',
+        customdata=np.stack((output_df['prices'], rolling_preds), axis=-1),
+        hovertemplate=(
+            "<b>Date: %{x}</b><br>" +
+            "Actual Price: $%{customdata[0]:.2f}<br>" +
+            "Predicted Price: $%{customdata[1]:.2f}<br>" +
+            "Error: $%{y:.2f}<extra></extra>"
+        )
+    ))
+
+    # 3. Add Zero Line
+    fig_error.add_hline(y=0, line_dash="dash", line_color=TEXT_GREY, line_width=1)
+
+    # 4. FIX: Add annotation to 'fig_error', not 'fig'
+    fig_error.add_annotation(
+        text=f"<b>PREDICTIVE CORE METRICS</b><br>RMSE: ${rmse:.2f}<br>MAE: ${mae:.2f}<br>MAPE: {mape:.2f}%",
+        xref="paper", yref="paper",
+        x=0.02, y=0.95, # Positioned top-left
+        showarrow=False,
+        align="left",
+        font=dict(color=PURE_WHITE, size=12),
+        bgcolor="rgba(38, 39, 48, 0.8)", # Darker, more solid background
+        bordercolor=BORDER_GREY, 
+        borderwidth=1, 
+        borderpad=10
+    )
+
+    # 5. Layout Styling
+    fig_error.update_layout(
+        template='plotly_dark',
+        paper_bgcolor=STREAMLIT_DARK,
+        plot_bgcolor=STREAMLIT_DARK,
+        title='<b>DAILY PREDICTION ERRORS</b>',
+        title_font=dict(size=22, color=PURE_WHITE),
+        xaxis=dict(gridcolor=GRID_GREY, tickfont=dict(color=TEXT_GREY), linecolor=BORDER_GREY),
+        yaxis=dict(gridcolor=GRID_GREY, tickfont=dict(color=TEXT_GREY), linecolor=BORDER_GREY),
+        showlegend=False,
+        margin=dict(t=80, b=50, l=50, r=50)
+    )
+    
+    return fig_error
+
+# --- Deployment in your Streamlit script ---
+st.subheader("Error Analysis & Accuracy")
+
+# Calculate errors
+errors = output_df['prices'] - rolling_preds
+
+# Display the plot
+st.plotly_chart(plot_daily_errors_with_details(output_df, rolling_preds, errors, rmse, mae, mape), use_container_width=True)
