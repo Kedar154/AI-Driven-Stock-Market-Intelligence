@@ -21,7 +21,8 @@ import streamlit as st
 # LOADING THE DATA
 
 
-data = pd.read_csv('D:/kEdAr/academix/CLubs/AIML/projects/Stock PRediction/microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
+data = pd.read_csv('microsoft-stock-time-series-analysis')
+#data = pd.read_csv('D:/kEdAr/academix/CLubs/AIML/projects/Stock PRediction/microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
 stock = pd.DataFrame()
 #using close and date
 stock['prices'] = data['Close']
