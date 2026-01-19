@@ -2,8 +2,7 @@
 # pip install opendatasets
 #pip install statsmodels
 # pip install arch
-import opendatasets as od
-od.download('microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -23,7 +22,7 @@ import streamlit as st
 # LOADING THE DATA
 
 
-data = pd.read_csv('D:/kEdAr/academix/CLubs/AIML/projects/Stock PRediction/microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
+data = pd.read_csv('microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
 stock = pd.DataFrame()
 #using close and date
 stock['prices'] = data['Close']
