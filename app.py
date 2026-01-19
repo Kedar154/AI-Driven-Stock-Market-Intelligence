@@ -3,7 +3,7 @@
 #pip install statsmodels
 # pip install arch
 import opendatasets as od
-od.download('https://www.kaggle.com/datasets/vijayvvenkitesh/microsoft-stock-time-series-analysis')
+od.download('microsoft-stock-time-series-analysis/Microsoft_Stock.csv')
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
