@@ -6,3 +6,13 @@ plotly
 statsmodels
 arch
 scikit-learn
+langchain
+langchain-groq
+langchain-core
+langchain-community
+langchain-huggingface
+chromadb
+sentence-transformers
+yfinance
+duckduckgo-search
+python-dotenv
