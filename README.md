@@ -396,8 +396,8 @@ Simple RAG is **optimal, efficient, and justifiable** for this use case.
 
 ### Generated Visualizations
 
-![[Pasted image 20260209211359.png]]
-![[Pasted image 20260209211431.png]]
+![[Tesla Vol.png]]
+![[Tesla Prices.png]]
 
 
 ---
