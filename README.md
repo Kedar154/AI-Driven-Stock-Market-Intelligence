@@ -423,24 +423,31 @@ Simple RAG is **optimal, efficient, and justifiable** for this use case.
 |**14**|2026-02-02|421.29|427.15|414.50|421.81|58,739,500|
 
 **🚀 THE BIG BULL HEADLINE**
+
 Tesla Takes a Hit: Robotaxis Can't Offset Earnings Blow! 
 
 **📊 THE TECHNICAL GAME**
+
 Look at this, Lala! The stock has been wrestling with itself. We saw a strong push on January 27th, volume hitting a healthy 37 lakh shares, but then it faltered. The next day, the volume exploded to over 54 lakh shares, showing serious interest, but the close barely held on. Then came the big drop on January 29th – a massive 81 lakh shares changing hands as the price plummeted. That was a panic sell, Bhai! The subsequent bounce on January 30th, with 82 lakh shares traded, suggests some support, but the close at 430.41 is concerning. Now, on February 2nd, we're seeing a further dip, volume at 58 lakh shares, and the price struggling. The RSI is clearly running a fever, indicating overbought conditions previously, and now a potential weakness. The moving averages are tangled, showing indecision. This isn't a breakout, Lala; it's a trap! The Operator is testing the waters, seeing who’s still holding on. 
 
 **🗣️ MARKET SENTIMENT** 
+
 The Operator has thrown a curveball, Bhai. Tesla’s Q3 earnings missed expectations – a 40% drop in operating profit! The news is out, and the market is reacting sharply. The stock is down over 5%, and the Bulls are licking their wounds. But Musk, that clever chap, is trying to distract everyone with these Robotaxi updates. He’s talking about no safety drivers in Austin by year-end and tests in multiple cities. It’s a shiny object, Lala, meant to keep the small investors interested while the big players reassess. The street is buzzing with chatter about the Robotaxi timeline, but the earnings miss is the elephant in the room. This is a classic case of trying to sell hope while the fundamentals are shaky. Dalal Street loves a good story, but it also respects the bottom line. 
 
 **🔍 THE BOTTOM LINE** 
+
 The real Khel here, Lala, is about perception versus reality. Tesla’s growth story is facing headwinds – post-EV tax credit environment, slowing demand, and now disappointing earnings. Musk’s Robotaxi vision is exciting, but it’s years away from generating significant revenue. The market is realizing this, and the stock is paying the price. The volume spikes are telling a story of panic and uncertainty, not of sustained bullish momentum. The Operator is trying to control the narrative, but the numbers don't lie. 
 
 **💰 SHOULD YOU INVEST?**
+
 Avoid, Bhai. Absolutely avoid. This isn't the time to be chasing a dream. The Lakshman Rekha is around 475, and we're getting dangerously close. Let the dust settle, let the market digest this news, and let someone else be the fall guy. There are better opportunities out there, Lala. Don't get caught in this Khel. 
 
 **ℹ️ Sources**
+
 [https://finance.yahoo.com/quote/TSLA/?fr=sycsrp_catchall](https://finance.yahoo.com/quote/TSLA/?fr=sycsrp_catchall) [https://finance.yahoo.com/news/tesla-q3-earnings-miss-analyst-expectations-stock-drops-despite-robotaxi-expansion-plans-133818343.html?fr=sycsrp_catchall](https://finance.yahoo.com/news/tesla-q3-earnings-miss-analyst-expectations-stock-drops-despite-robotaxi-expansion-plans-133818343.html?fr=sycsrp_catchall) 
 
 
 **💀 DISCLAIMER** 
+
 Lala, market mein sabse bada risk toh vishwaas hota hai. Ab yeh system ek 18 saal ke bacche ne banaya hai. Agar tum iske kehne par apni poori zindagi ki kamai daon par laga rahe ho... toh maanna padega, tum mujhse bhi bade khiladi nikle! Par yaad rakhna, yahan bina soche koodne waale aksar doob jaate hain. 
 AS ALWAYS: Risk hai to Ishq hai
