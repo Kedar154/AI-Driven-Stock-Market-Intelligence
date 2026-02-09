@@ -138,6 +138,8 @@ _A Retrieval-Augmented Market Analysis Engine with Explainable Outputs_
 - **Architecture:** Fixed-pipeline **RAG system** powered by `gemma-3-12b-it`, semantic search, and real-time market data
     
 - **Output Style:** Interactive charts + structured analysis delivered via a **Harshad Mehta (“THE BIG BULL”) persona**
+
+- - **Resources:** [Interactive Colab Notebook](https://colab.research.google.com/drive/1gGF30ymiIBLicGfdGj0_1vZ8-9uIjPuZ?authuser=1#scrollTo=Od6-WPSAoEGI)
     
 
 ---
